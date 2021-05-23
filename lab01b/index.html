@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #111;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+<header>
+    <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</header>
+<main>
+  <div>
+<h2>JOIN X GYM TODAY</h2>
+<p>Get the amenities, strength workouts, cardio equipment, group exercise classes and personal training support you need to crush your fitness goals. Are you in?</p>
+</div>
+<div class="header">
+  <h2>BMI</h2>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <table >
+    <tbody><tr><td>Category</td><td>BMI range - kg/m<sup>2</sup></td></tr>
+    <tr><td>Severe Thinness</td><td>&lt; 16</td></tr>
+    <tr><td>Moderate Thinness</td><td>16 - 17</td></tr>
+    <tr><td>Mild Thinness</td><td>17 - 18.5</td></tr>
+  
+    <tr><td>Normal</td><td>18.5 - 25</td></tr>
+    <tr><td>Overweight</td><td>25 - 30</td></tr>
+    <tr><td>Obese Class I</td><td>30 - 35</td></tr>
+    <tr><td>Obese Class II</td><td>35 - 40</td></tr>
+    <tr><td>Obese Class III</td><td>&gt; 40</td></tr>
+  </tbody></table>
+</div>
+  <div class="column" id="result" style="background-color:#bbb;"></div>
+  <div class="column" style="background-color:#ccc;">BMI formula
+    Below are the equations used for calculating BMI in the International System of Units (SI) and the US customary system (USC) using a 5'10", 160-pound individual as an example:
+    <br>
+    <br>
+    <img src="https://images.squarespace-cdn.com/content/v1/54a9bf74e4b0891d14c7561e/1489960919347-GH9ATBOSQGE8NSUUEFMQ/ke17ZwdGBToddI8pDm48kAJ0nmQTY317D2TfDnMLdUpZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwRydeJU34kWc4WWgIkf520TuaPizLAarkVoSUmjUwGYVlM6blhcHTGF_SvtsNwEOE/image-asset.png?format=500w" width="100px" height="80px">
+    </div>
+</div>
+</main>
+<footer>
+  <p>Created by deyaa pozan</p>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
