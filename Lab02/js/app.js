@@ -1,5 +1,8 @@
+"use strict"
 let userName = prompt("What is your name")
 document.getElementById("name").textContent = userName;
+
+alert("hi " + userName)
 
 let Q1 = prompt("Do you have a business?").toLocaleLowerCase()
 let Q2 = prompt("Do you need a website?").toLocaleLowerCase()
@@ -20,6 +23,8 @@ arr.forEach(element => {
 
 if(count >=3){
     alert("contact with me 0799999999")
+}else{
+    alert("welcome my portfolio")
 }
 
 
