@@ -1,0 +1,25 @@
+header  #ImgProfile{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin: 300px;
+}
+header #above{
+    text-align: center;
+    height: 600px;
+}
+header #CoverProfile{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+main #me{
+    text-decoration:  solid;
+    font-size: 20px;
+   
+}
