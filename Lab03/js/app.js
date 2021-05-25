@@ -4,7 +4,7 @@ document.getElementById("name").textContent = userName;
 
 alert("hi " + userName)
 alert("Your answer should be yes/y or no/n ")
-let Q1 = prompt("Q1 :Do I like football?").toLocaleLowerCase()
+let Q1 = prompt("Q1 :Do I like football?").toLowerCase()
 let Q2 = prompt("Q2 :Do I love Mansaf?").toLocaleLowerCase()
 let Q3 = prompt("Q3 :Am I 22 years old?").toLocaleLowerCase()
 let Q4 = prompt("Q4 :Am I a programmer?").toLocaleLowerCase()
@@ -33,24 +33,25 @@ for (let i = 0; i < arr.length; i++) {
 
 }   
 
-let Q6 = prompt("Q6 :Guess a number from 1 to 10")
 
-Q6 = Number(Q6)
+
 for (let i = 0; i < 4; i++) {
+    let Q6 = prompt("Q6 :Guess a number from 1 to 10")
+    Q6 = Number(Q6)
     if (Q6 == 6 ) {
         alert("Your answer is correct")
         count++
         break;
     }else if (Q6 < 6 && Q6 > 0){
-        Q6 = prompt("Your answer is too low")
-        Q6 = Number(Q6)
+        alert("Your answer is too low")
+        
     }else if (Q6 > 6 && Q6 < 11){
         
-        Q6 = prompt("Your answer is too high")
-        Q6 = Number(Q6)
+      alert("Your answer is too high")
+       
     } else{
         Q6 = prompt("Please enter a number from 1 to 10")
-        Q6 = Number(Q6)
+       
         i--;
     }
   
