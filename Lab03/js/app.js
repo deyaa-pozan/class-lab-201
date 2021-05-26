@@ -12,7 +12,8 @@ let Q5 = prompt("Q5 :Am I from Syria?").toLocaleLowerCase()
 
 
 
- let count = 0;
+ let count = 0
+ function firstFiveQ(){
 let arr = [Q1, Q2, Q3, Q4, Q5]
 for (let i = 0; i < arr.length; i++) {
     
@@ -33,8 +34,8 @@ for (let i = 0; i < arr.length; i++) {
 
 }   
 
-
-
+ }
+function sixthQ(){
 for (let i = 0; i < 4; i++) {
     let Q6 = prompt("Q6 :Guess a number from 1 to 10")
     Q6 = Number(Q6)
@@ -56,6 +57,8 @@ for (let i = 0; i < 4; i++) {
     }
   
 }
+}
+function seventhQ(){
  let Q7 = prompt("Q7 :Enter one of the top 10 programming languages ​​for the year 2021").toLocaleLowerCase()
 
 let arr2 =  ['python','javascript','java','c++','golang','c#','sql','dart','r','php'];
@@ -73,10 +76,13 @@ for (let i = 0; i < 6; i++) {
     }
     
 }
+}
 
 alert("Correct answers are : " + count)
 
-
+firstFiveQ();
+sixthQ();
+seventhQ();
 
 
 
