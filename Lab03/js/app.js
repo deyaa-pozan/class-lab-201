@@ -56,11 +56,12 @@ for (let i = 0; i < 4; i++) {
     }
   
 }
- let Q7 = prompt("Q7 :Enter one of the top 10 programming languages ​​for the year 2021").toLocaleLowerCase()
+
 
 let arr2 =  ['python','javascript','java','c++','golang','c#','sql','dart','r','php'];
 
 for (let i = 0; i < 6; i++) {
+    let Q7 = prompt("Q7 :Enter one of the top 10 programming languages ​​for the year 2021").toLocaleLowerCase()
     for (let j = 0; j < arr2.length; j++) {
         if (Q7 ==arr2[j] ) {
             alert("Your answer is correct")
@@ -68,10 +69,10 @@ for (let i = 0; i < 6; i++) {
             count++;
             i = 7;
             break ;
+        }else if(j == arr2.length-1){
+            alert("Your answer is wrong, try again")
         }
-
     }
-    
 }
 
 alert("Correct answers are : " + count)

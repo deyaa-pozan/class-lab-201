@@ -14,13 +14,13 @@ let arr = [Q1, Q2, Q3, Q4, Q5]
 for (let i = 0; i < arr.length; i++) {
     
     switch (arr[i]) {
-        case "yes": alert(`Q${i+1}Your answer is correct`)
+        case "yes": alert(`Q${i+1} Your answer is correct`)
         break;
-        case "y": alert(`Q${i+1}Your answer is correct`)
+        case "y": alert(`Q${i+1} Your answer is correct`)
             break;
-        case "no":alert(`Q${i+1}Your answer is wrong`) 
+        case "no":alert(`Q${i+1} Your answer is wrong`) 
         break;
-        case "n": alert(`Q${i+1}Your answer is wrong`) 
+        case "n": alert(`Q${i+1} Your answer is wrong`) 
             break;
         default:
             break;
