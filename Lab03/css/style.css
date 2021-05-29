@@ -23,3 +23,20 @@ main #me{
     font-size: 20px;
    
 }
+.list { 
+float: left;
+margin: 10px;
+}
+.list ul li { 
+font-size: 30px;
+}
+li:nth-of-type(even){
+    color: red;
+}
+li:nth-of-type(odd){
+    color: green;
+}
+.text { 
+    font-size: 30px;
+    margin : 60px;
+    }
